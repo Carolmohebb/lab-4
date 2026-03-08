@@ -1,0 +1,114 @@
+body {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.todo-container {
+  max-width: 440px;
+  margin: 48px auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  padding: 36px;
+  transition: box-shadow 0.3s;
+}
+.todo-container:hover {
+  box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+}
+.todo-header h2 {
+  color: #2a5298;
+  font-weight: 700;
+  margin-bottom: 28px;
+  letter-spacing: 1px;
+}
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.todo-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #b6c6e2;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.todo-input input:focus {
+  border-color: #2a5298;
+}
+.todo-input button {
+  background: linear-gradient(90deg, #2a5298 0%, #0078d4 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.todo-input button:hover {
+  background: linear-gradient(90deg, #0078d4 0%, #2a5298 100%);
+}
+.todo-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+  justify-content: center;
+}
+.todo-filters button {
+  border: none;
+  background: #e0eafc;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: #2a5298;
+  transition: background 0.2s, color 0.2s;
+}
+.todo-filters button.active {
+  background: #2a5298;
+  color: #fff;
+}
+ul.todo-list {
+  list-style: none;
+  padding: 0;
+}
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9fafb;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px 14px;
+  box-shadow: 0 2px 8px rgba(42,82,152,0.04);
+  transition: background 0.2s;
+}
+.todo-item:hover {
+  background: #e0eafc;
+}
+.todo-item.completed .desc {
+  text-decoration: line-through;
+  color: #b6c6e2;
+}
+.desc {
+  flex: 1;
+  margin-right: 10px;
+  font-size: 1rem;
+  color: #2a5298;
+}
+.actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 6px;
+  font-size: 1.1rem;
+  color: #0078d4;
+  transition: color 0.2s;
+}
+.actions button:hover {
+  color: #2a5298;
+}
